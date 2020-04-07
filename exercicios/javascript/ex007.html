@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    Nacionalidade: <input type="text" name="txtnat" id="txtnat">
+    <input type="button" value="Verificar" onclick="analisar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function analisar() {
+            var txtnat = window.document.querySelector('input#txtnat')
+            var res = window.document.querySelector('div#res')
+    
+            res.innerHTML = `Sua nacionalidade é ${nat}`
+            if (nat == Brasil) {
+                res.innerHTML = `Você é Brasileiro(a)`
+            } else {
+
+            }
+        
+
+
+
+
+
+    </script>
+</body>
+</html>
