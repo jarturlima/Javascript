@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>é Brasileiro?</title>
+    <style>
+        body {
+            font: normal 14pt Arial;
+        }
+
+        input {
+            font: normal 14pt Arial
+        }
+    </style>
 </head>
+
 <body>
     <h1>Informe seu país</h1>
     <input type="text" name="pais" id="pais">
@@ -13,18 +24,19 @@
 
     </div>
     <script>
-        function anali(){
+        function anali() {
             var pais1 = window.document.getElementById('pais')
-            var pais = String(pais.value)
+            var pais = String(pais1.value)
             var result = window.document.getElementById('result')
             result.innerHTML = `Você mora no ${pais},`
-            if(pais == 'brasil'){
-                result.innerHTML += ' Você é brasileiro(a)' 
+            if (pais == 'brasil') {
+                result.innerHTML += ' Você é brasileiro(a)'
             }
-            else{
+            else {
                 result.innerHTML += ' Você é estrangeiro(a)'
             }
         }
     </script>
 </body>
+
 </html>
