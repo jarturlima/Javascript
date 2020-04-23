@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual País?</title>
+    <style>
+        body {
+            font: normal 15pt Arial;
+            background: rgb(233, 255, 190);
+        }
+
+        input {
+            font: normal 15pt Arial;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Informe seu país</h1>
+    <input type="text" name="pais" id="pais">
+    <input type="button" value="enviar" onclick="anali()">
+    <div id="result">
+
+    </div>
+    <script>
+        function anali() {
+            var pais1 = window.document.getElementById('pais')
+            var pais = String(pais1.value)
+            var result = window.document.getElementById('result')
+            result.innerHTML = `Você mora no ${pais},`
+            if (pais == 'Brasil') {
+                result.innerHTML += 'Você é brasileiro'
+            }
+            else {
+                result.innerHTML += 'Você é estrangeiro'
+            }
+        }
+    </script>
+</body>
+
+</html>
